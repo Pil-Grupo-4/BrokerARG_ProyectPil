@@ -1,13 +1,20 @@
-#navBarContainer {
-    background-color: #1F7A8C;
+#navBarGral{
+    background-color:#1F7A8C !important ;
+    border-radius: 0.5px;
+}
+#navBarContainer{
+    padding-left:200px;
+    padding-right:200px;
+}
+.navbar-nav {
     margin-left: auto;
     padding-left: 100px;
-}
 
-#titlelog {
+}
+.navbar-brand {
     color: #ffffff;
+    padding: 0%;
 }
-
-#block {
-    background-color: #BFDBF7;
+#ingresarNav {
+    color: #ffffff;
 }

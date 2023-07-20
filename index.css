@@ -20,15 +20,17 @@
     font-size: 25px;
 }
 
-.nav-link {
+.navbar-nav a{
     color: aliceblue;
     letter-spacing: 1px;
     font-size: 18px;
-    margin-right: 10px
+    margin-right: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
-.nav-link[href="#"] {
-    /*Solo se aplica al que tenga el # en el href */
+.ingresar {
     border-radius: 50px;
     background-color:#3447F4;
     padding: 10px 20px;

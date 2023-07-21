@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+#navBarGral {
+    background-color: #5077FE !important;
+}
+#navBarContainer {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.navbar-nav {
+    margin-left: auto;
+    padding-left: 100px;
+}
+.navbar-brand {
+    color: aliceblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.nav-link {
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-right: 10px
+}
+.nav-link[href="#"] {border-radius: 50px;
+    background-color:#3447F4;
+    padding: 10px 20px;}
+    /*Solo se aplica al que tenga el # en el href*/

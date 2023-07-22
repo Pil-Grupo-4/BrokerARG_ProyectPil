@@ -332,19 +332,6 @@ img {
 .services .service-item:hover h4 {
   color: #1F7A8C;
 }
-
-/* 
----------------------------------------------
-Projects Style
---------------------------------------------- 
-*/
-
-/* 
----------------------------------------------
-Infos Style
---------------------------------------------- 
-*/
-
 .infos {
   background-image: url(../images/Fondo.jpg);
   background-repeat: no-repeat;

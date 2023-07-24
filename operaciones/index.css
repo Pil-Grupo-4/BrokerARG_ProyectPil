@@ -38,16 +38,11 @@ body{
 
 .compraContainer_buttons{
     display: flex;
-    justify-content: end;
-    margin-right: 2%;
+    justify-content: center;
+    margin-top: 1%;
 }
 
-.compraContainer_cantidad{
-/*     display: flex;
-    justify-content: space-between;
-    margin-left: 0%; */
 
-}
 .compraContainer_simboloInput input{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -73,4 +68,9 @@ tr{
 .form-check{
     flex-direction: row;
     display: flex;
+}
+
+.btn{
+    background-color: #1F7A8C;
+    color: white;
 }

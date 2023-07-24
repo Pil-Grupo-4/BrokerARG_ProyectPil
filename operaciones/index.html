@@ -49,27 +49,34 @@
     </div>
   </nav>
   <!-- fin navbar -->
+
+
   <!-- Formulario de compra -->
   <div class="contain justify-content-center w-100 d-flex">
     <div class="w-50">
       <h2 class="titulo">Comprar accion</h2>
       <div class="compraContainer">
-<!--         <div class="w-100 justify-content-end d-flex">
-          <span class="text-secondary">Precio actual: <span class="text-danger fw-bold">$20.000 (-0,45%)</span></span>
-        </div> -->
         <h6 class="fw-bold mt-2">Mercado</h6>
         <div class="input-group mb-3 w-50">
-          <!-- <label class="input-group-text " for="inputGroupSelect01">Mercado</label> -->
           <select class="form-select" id="inputGroupSelect01">
             <option selected>Seleccionar...</option>
             <option value="1">Argentina</option>
             <option value="2">EEUU</option>
             <option value="3">Brasil</option>
           </select>
+          <div>
+            <label class="d-flex flex-row-reverse align-items-center fw-medium">Plazo normal
+              <input class="form-check-input mt-0" type="radio" value="1" name="inputMercado" id="plazoLabel"
+                aria-label="Checkbox for following text input" checked>
+            </label>
+            <label class="d-flex flex-row-reverse align-items-center fw-medium">C. Inmediato
+              <input class="form-check-input mt-0" type="radio" value="1" name="inputMercado" id="contadoLabel"
+                aria-label="Checkbox for following text input" checked>
+            </label>
+          </div>
         </div>
         <h6 class="fw-bold mt-2">Simbolo</h6>
         <div class="input-group mb-3 w-50">
-         <!--  <span class="input-group-text fw-bold">Simbolo</span> -->
           <div class="form-floating">
             <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
             <label for="floatingInputGroup1 " class="fw-normal">Simbolo</label>
@@ -117,7 +124,6 @@
         </div>
         <h6 class="fw-bold mt-2">Validez</h6>
         <div class="input-group mb-3 w-50">
-          <!-- <label class="input-group-text" for="inputGroupSelect01">Validez</label> -->
           <select class="form-select" id="inputGroupSelect01">
             <option selected>Seleccionar...</option>
             <option value="1">Para mañana</option>
@@ -128,8 +134,51 @@
             <option value="6">Hatsa el 1 de agosto</option>
           </select>
         </div>
-        <div class="w-100 justify-content-end d-flex">
-          <span class="text-secondary">Precio actual: <span class="text-danger fw-bold">$20.000 (-0,45%)</span></span>
+        <div class="w-100 align-items-end d-flex flex-column">
+          <span class="text-secondary fs-4 mb-2">Precio actual: <span class="text-success fw-bold">$ 10,288.500 (0.41%)</span></span>
+          <span class="justify-content-start text-start w-100">Ultimas transacciones:</span>
+          <table class="table ">
+            <thead>
+              <tr>
+                <td scope="col" class="w-25 text-center fw-bold">Cant Compra</td>
+                <td scope="col" class="w-25 text-center fw-bold">Precio Compra</td>
+                <td scope="col" class="w-25 text-center fw-bold">Precio Venta</td>
+                <td scope="col" class="w-25 text-center fw-bold">Cant Venta</td>
+              </tr>
+            </thead>
+            <tbody class="">
+              <tr>
+                <td class="w-25 text-center">6</td>
+                <td class="w-25 text-center" >10280,000</td>
+                <td class="w-25 text-center" >10289,500</td>
+                <td class="w-25 text-center" >1.460</td>
+              </tr>
+              <tr>
+                <td class="w-25 text-center">11</td>
+                <td class="w-25 text-center">10280,000</td>
+                <td class="w-25 text-center">10289,500</td>
+                <td class="w-25 text-center">1.652</td>
+              </tr>
+              <tr>
+                <td class="w-25 text-center">10</td>
+                <td class="w-25 text-center">10280,000</td>
+                <td class="w-25 text-center">10289,500</td>
+                <td class="w-25 text-center">11</td>
+              </tr>
+              <tr>
+                <td class="w-25 text-center">2.263</td>
+                <td class="w-25 text-center">10280,000</td>
+                <td class="w-25 text-center">10289,500</td>
+                <td class="w-25 text-center">44</td>
+              </tr>
+              <tr>
+                <td class="w-25 text-center">1.765</td>
+                <td class="w-25 text-center">10280,000</td>
+                <td class="w-25 text-center">10289,500</td>
+                <td class="w-25 text-center">2200</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="compraContainer_buttons">

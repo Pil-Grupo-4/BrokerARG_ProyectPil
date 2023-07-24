@@ -1,76 +1,9 @@
-body{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    height: max-content;
-
-}
 .titulo{
     color: #1F7A8C;
-    font-weight: bolder;
-    margin-bottom: 3%;
 }
 .compraContainer{
     background-color: #E1E5F2;
-    justify-content: center;
-    padding: 3%;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
 }
-
-.contain{
-    width: 100%;
-    margin-top: 2%;
-    justify-content: center;
-    
-}
-
-.compraContainer_mercadoInput select{
- width: 30%;
- margin-left: 2%;
-}
-
-.compraContainer label{
-    font-weight: bold;
-    display: flex;
-}
-
-.compraContainer_buttons{
-    display: flex;
-    justify-content: center;
-    margin-top: 1%;
-}
-
-
-.compraContainer_simboloInput input{
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    margin-left: 2%;
-}
-
-.compraContainer_cantidad input{
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-margin-left: 2%;
-}
-
-table{
-    width: 100%;
-}
-tr{
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-check{
-    flex-direction: row;
-    display: flex;
-}
-
 .btn{
     background-color: #1F7A8C;
-    color: white;
 }

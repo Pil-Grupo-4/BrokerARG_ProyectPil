@@ -18,9 +18,7 @@ body{
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
-.compraContainer div{
-    margin: 2%;
-}
+
 .container{
     width: 50%;
     margin-top: 2%;
@@ -45,9 +43,9 @@ body{
 }
 
 .compraContainer_cantidad{
-    display: flex;
+/*     display: flex;
     justify-content: space-between;
-    margin-left: 0%;
+    margin-left: 0%; */
 
 }
 .compraContainer_simboloInput input{
@@ -70,4 +68,9 @@ table{
 tr{
     display: flex;
     justify-content: space-between;
+}
+
+.form-check{
+    flex-direction: row;
+    display: flex;
 }

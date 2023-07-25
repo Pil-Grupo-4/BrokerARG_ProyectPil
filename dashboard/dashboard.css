@@ -13,12 +13,14 @@
     margin-left: auto;
     padding-left: 100px;
 }
+
 .navbar-brand {
     color: aliceblue;
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 25px;
 }
+
 .nav-link {
     color: aliceblue;
     letter-spacing: 1px;
@@ -41,6 +43,50 @@
     }
 }
 
+
+
+
+
+.ingresar {
+    border-radius: 50px;
+    background-color:#3447F4;
+    padding: 10px 20px;
+}
+/*CSS PARA EL NAV*/
+
+.info_portfolio_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.portfolio_row {
+    height: 80%;
+    width: 100%;
+}
+
+.portfolio_div {
+    height: 100%; 
+    background-color: #BFDBF7;
+    border: 1px solid #ced4da; /* Add a 1px solid border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 10px;
+}
+
+.portfolio_div h3 {
+    color: #022B3A;
+}
+
+.portfolio_div h4 {
+    color: #1F7A8C;
+}
+
+
+
+
+/* FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter */
 #Footer{
     width: 100%;
     position: fixed;

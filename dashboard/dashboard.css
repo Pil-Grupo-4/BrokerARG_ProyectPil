@@ -1,11 +1,15 @@
-/*CSS PARA EL NAV*/
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
 #navBarGral {
     background-color: #5077FE !important;
 }
 
 #navBarContainer {
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 200;
+    padding-right: 200;
 
 }
 
@@ -21,22 +25,75 @@
     font-size: 25px;
 }
 
-.navbar-nav a{
+.nav-link {
     color: aliceblue;
     letter-spacing: 1px;
     font-size: 18px;
-    margin-right: 10px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    margin-right: 10px
 }
 
-.ingresar {
+.nav-link[href="#"] {
+    /* Solo se aplica al que tenga el # en el href */
     border-radius: 50px;
-    background-color:#3447F4;
+    background-color: #3447F4;
     padding: 10px 20px;
 }
+
+/* Media query para pantallas grandes (min-width: 992px) */
+@media (min-width: 992px) {
+    #navBarContainer {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+}
+
+#Footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;  
+    background-color: #40404039; 
+}
+
+#footerDiv{
+    padding-left: 250;
+    padding-right:250;
+
+    align-items: center;
+
+    
+}
+
+@media (min-width: 992px) {
+    #footerDiv {
+        padding-left: 450px;
+        padding-right: 450px;
+        padding-top: 30px!important;
+        margin-top: 0!important;
+    }
+}
 /*CSS PARA EL NAV*/
+
+body {
+    background-color: #f0f0f0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_container {
+    max-width: 80%;
+    margin: 60px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px; 
+}
 
 .info_portfolio_container {
     display: flex;
@@ -57,6 +114,7 @@
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
     padding: 10px;
+    text-align: center;
 }
 
 .portfolio_div h3 {
@@ -65,4 +123,9 @@
 
 .portfolio_div h4 {
     color: #1F7A8C;
+}
+
+.portfolio_table th {
+    background-color: #3447F4; 
+    color: white; 
 }

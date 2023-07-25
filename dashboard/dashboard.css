@@ -1,11 +1,11 @@
-/*CSS PARA EL NAV*/
+
 #navBarGral {
     background-color: #5077FE !important;
 }
 
 #navBarContainer {
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 200;
+    padding-right: 200;
 
 }
 
@@ -21,15 +21,31 @@
     font-size: 25px;
 }
 
-.navbar-nav a{
+.nav-link {
     color: aliceblue;
     letter-spacing: 1px;
     font-size: 18px;
-    margin-right: 10px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+    margin-right: 10px
 }
+
+.nav-link[href="#"] {
+    /* Solo se aplica al que tenga el # en el href */
+    border-radius: 50px;
+    background-color: #3447F4;
+    padding: 10px 20px;
+}
+
+/* Media query para pantallas grandes (min-width: 992px) */
+@media (min-width: 992px) {
+    #navBarContainer {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+}
+
+
+
+
 
 .ingresar {
     border-radius: 50px;
@@ -65,4 +81,33 @@
 
 .portfolio_div h4 {
     color: #1F7A8C;
+}
+
+
+
+
+/* FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter */
+#Footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;  
+    background-color: #40404039; 
+}
+
+#footerDiv{
+    padding-left: 250;
+    padding-right:250;
+
+    align-items: center;
+
+    
+}
+
+@media (min-width: 992px) {
+    #footerDiv {
+        padding-left: 450px;
+        padding-right: 450px;
+        padding-top: 30px!important;
+        margin-top: 0!important;
+    }
 }

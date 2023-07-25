@@ -30,7 +30,7 @@
     <main>
         <div class="container">
             <h2 class="mb-4">Registro</h2>
-            <form>
+            <form id="form-register">
                 <div class="form-group">
                     <label for="name">Nombre completo:</label>
                     <input type="name" class="form-control" id="name" name="name" placeholder="nombre apellido" required>
@@ -54,5 +54,20 @@
         </div>
     </main>
 
+    <script>
+        const formRegister = document.getElementById("form-register");
+        formRegister.addEventListener("submit", (e) => {
+            e.preventDefault()
+            let isEmpty = false;
+            for(let i=0; i<e.target.length-1; i++){
+                if(e.target[i].value == ""){
+                    isEmpty = true;
+                }
+            }
+            if(!isEmpty){
+                location.pathname = "/formularios/login/index.html"
+            }
+        })
+    </script>
 </body>
 </html>l

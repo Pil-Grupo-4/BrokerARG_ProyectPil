@@ -8,150 +8,202 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="operaciones.css">
-
 </head>
 
-<body>
+<body class="d-flex w-100 flex-column h-100">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-  <script>
-    var inputCantidad = document.getElementsByClassName('inputCantidad');
-    var radioCantidad = document.getElementsByClassName('flexRadioDefault1');
-
-    // Agregamos un evento al radio "Cantidad"
-    radioCantidad.addEventListener('change', function () {
-      if (/* this.checked */ inputCantidad.checked) {
-        inputCantidad.disabled = true; // Deshabilitar el input "Cantidad"
-      } else {
-        inputCantidad.disabled = false; // Habilitar el input "Cantidad"
-      }
-    });
-  </script>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navBarGral">
-  <div class="container-fluid" id="navBarContainer">
-      <a class="navbar-brand" href="#">ArgenBroker</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-
-            <a class="nav-link" id="homeNav" href="../home/home.html">Home</a> 
-             <a class="nav-link" id="dashboarNav" href="../dashboard/dashboard.html">DashBoard</a> 
-             <a class="nav-link" id="operacionesNav" href="#">Operaciones</a>
-             <a class="nav-link" id="logoutNav" href="../formularios/login/login.html">Log out</a>
-
-          </div>
-      </div>
-  </div>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navBarGral">
+    <div class="container-fluid" id="navBarContainer">
+        <a class="navbar-brand" href="#">ArgenBroker</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" id="ingresarNav" href="/Landing/landingPage.html">Home</a>
+              <a class="nav-link" id="dashboarNav" href="/dashboard/dashboard.html">DashBoard</a>
+              <a class="nav-link" id="ingresarNav" href="/cotizaciones/cotizaciones.html">Cotizaciones</a>
+              <a class="nav-link" id="operacionesNav" href="#">Operaciones</a>
+              <a class="nav-link" id="logoutNav" href="../formularios/login/login.html">Log out</a>
+            </div>
+        </div>
+    </div>
+  </nav>
 
 
-  <div class="container" id="containerGeneral">
-    <h2 class="titulo">Comprar accion</h2>
-    <div class="compraContainer">
-      <div class="compraContainer_mercadoInput">
-        <label>Mercado
-          <select class="form-select" aria-label="Default select example">
-            <option selected>(Seleccionar)</option>
+  <!-- Formulario de compra -->
+  <div class="contain justify-content-center w-100 d-flex mt-2">
+    <div class="w-75 mb-4">
+      <h2 class="titulo fw-bolder mb-3">Comprar accion</h2>
+      <div class="compraContainer justify-content-center p-3 rounded">
+        <h6 class="fw-bold mt-2">Mercado</h6>
+        <div class="input-group mb-3 w-50">
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Seleccionar...</option>
             <option value="1">Argentina</option>
-            <option value="2">E.E.U.U.</option>
+            <option value="2">EEUU</option>
             <option value="3">Brasil</option>
           </select>
-        </label>
-      </div>
-      <div class="compraContainer_simboloInput">
-        <label>Simbolo <input placeholder="Simbolo" /></label>
-      </div>
-      <div class="compraContainer_cantidad">
-        <label>Cantidad/Monto
           <div>
-            <div class="form-check">
-              <input class="cantidad-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Cantidad
+            <label class="d-flex flex-row-reverse align-items-center fw-medium">Plazo normal
+              <input class="form-check-input mt-0" type="radio" value="1" name="inputMercado" id="plazoLabel"
+                aria-label="Checkbox for following text input" checked>
+            </label>
+            <label class="d-flex flex-row-reverse align-items-center fw-medium">C. Inmediato
+              <input class="form-check-input mt-0" type="radio" value="1" name="inputMercado" id="contadoLabel"
+                aria-label="Checkbox for following text input" checked>
+            </label>
+          </div>
+        </div>
+        <h6 class="fw-bold mt-2">Simbolo</h6>
+        <div class="input-group mb-3 w-50">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+            <label for="floatingInputGroup1 " class="fw-normal">Simbolo</label>
+          </div>
+        </div>
+        <div class="input-group mb-3 d-flex flex-column">
+          <h6 class="fw-bold mt-2">Cantidad/Monto</h6>
+          <div class="d-flex flex-row">
+            <div class="input-group-text w-25">
+              <label class="d-flex flex-row-reverse align-items-center fw-medium">Cantidad
+                <input class="form-check-input mt-0" type="radio" value="1" name="input" id="cantidadLabel"
+                  aria-label="Checkbox for following text input" checked>
               </label>
             </div>
-            <div class="form-check">
-              <input class="monto-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
-                Monto
+            <input type="text" class="form-control w-50" aria-label="Text input with checkbox" id="cantidadInput" placeholder="cantidad">
+          </div>
+          <div class="d-flex flex-row">
+            <div class="input-group-text w-25">
+              <label class="d-flex flex-row-reverse align-items-center fw-medium">Monto
+                <input class="form-check-input mt-0" type="radio" value="2" name="input" id="montoLabel"
+                  aria-label="Checkbox for following text input">
               </label>
             </div>
+            <input type="text" class="form-control w-50" aria-label="Text input with checkbox" id="montoInput" placeholder="monto" disabled>
           </div>
-          <div class="ingresoMontos">
-            <input class='inputCantidad' placeholder="Cantidad" />
-            <input class='inputMonto' placeholder="Monto" />
-          </div>
-        </label>
-      </div>
-      <div class="compraContainer_cantidad">
-        <label>Modalidad
+        </div>
+        <div class="compraContainer_cantidad d-flex flex-column">
+          <h6 class="fw-bold mt-2">Modalidad</h6>
           <div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
+            <div class="form-check flex-row d-flex">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+              <label class="form-check-label fw-medium" for="flexRadioDefault1">
                 Precio mercado
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
+            <div class="form-check flex-row d-flex">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label fw-medium" for="flexRadioDefault2">
                 Precio Limite
               </label>
+              <input id="modalidadInput" class="form-control w-25" placeholder="Limite" disabled />
             </div>
           </div>
-          <div>
-            <input />
-          </div>
-        </label>
+
+        </div>
+        <h6 class="fw-bold mt-2">Validez</h6>
+        <div class="input-group mb-3 w-50">
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Seleccionar...</option>
+            <option value="1">Para mañana</option>
+            <option value="2">Hasta el 25 de julio</option>
+            <option value="3">Hasta el 26 de julio</option>
+            <option value="4">Hasta el 27 de julio</option>
+            <option value="5">Hasta el 28 de julio</option>
+            <option value="6">Hatsa el 1 de agosto</option>
+          </select>
+        </div>
+        <div class="w-100 align-items-end d-flex flex-column">
+          <span class="text-secondary fs-4 mb-2">Precio actual: <span class="text-success fw-bold">$ 10,288.500 (0.41%)</span></span>
+          <span class="justify-content-start text-start w-100">Ultimas transacciones:</span>
+          <table class="table w-100">
+            <thead>
+              <tr>
+                <td scope="col" class="w-25 text-center fw-bold">Cant Compra</td>
+                <td scope="col" class="w-25 text-center fw-bold">Precio Compra</td>
+                <td scope="col" class="w-25 text-center fw-bold">Precio Venta</td>
+                <td scope="col" class="w-25 text-center fw-bold">Cant Venta</td>
+              </tr>
+            </thead>
+            <tbody class="">
+              <tr>
+                <td class="w-25 text-center">6</td>
+                <td class="w-25 text-center" >10280,000</td>
+                <td class="w-25 text-center" >10289,500</td>
+                <td class="w-25 text-center" >1.460</td>
+              </tr>
+              <tr>
+                <td class="w-25 text-center">11</td>
+                <td class="w-25 text-center">10280,000</td>
+                <td class="w-25 text-center">10289,500</td>
+                <td class="w-25 text-center">1.652</td>
+              </tr>
+              <tr>
+                <td class="w-25 text-center">10</td>
+                <td class="w-25 text-center">10280,000</td>
+                <td class="w-25 text-center">10289,500</td>
+                <td class="w-25 text-center">11</td>
+              </tr>
+              <tr>
+                <td class="w-25 text-center">2.263</td>
+                <td class="w-25 text-center">10280,000</td>
+                <td class="w-25 text-center">10289,500</td>
+                <td class="w-25 text-center">44</td>
+              </tr>
+              <tr>
+                <td class="w-25 text-center">1.765</td>
+                <td class="w-25 text-center">10280,000</td>
+                <td class="w-25 text-center">10289,500</td>
+                <td class="w-25 text-center">2200</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="compraContainer_buttons">
-        <button type="button" class="btn btn-success fw-medium">Comprar</button>
+      <div class="compraContainer_buttons d-flex justify-content-center mt-4">
+        <button type="button" class="btn fw-bold justify-content-center w-25 text-white ">Comprar</button>
       </div>
+      <br />
+      <h4>Monto disponible para Argentina</h4>
+      <table class="table-succes rounded mb-10" >
+        <tbody >
+          <tr>
+            <td class="border-end">Monto disponible para operaciones en contado inmediato en Peso Argentino</td>
+            <td>AR$ 0,00</td>
+          </tr>
+          <tr>
+            <td class="border-end">Monto disponible para operaciones en 24hs en Peso Argentino </td>
+            <td>AR$0,00</td>
+          </tr>
+          <tr>
+            <td class="border-end">Monto disponible para operaciones en 48hs en Peso Argentino </td>
+            <td>AR$0,00</td>
+          </tr>
+          <tr>
+            <td class="border-end ">Monto disponible para operaciones en contado inmediato en Dólar Estadounidense </td>
+            <td>US$0,00</td>
+          </tr>
+          <tr>
+            <td class="border-end">Monto disponible para operaciones en 24hs en Dólar Estadounidense </td>
+            <td>US$0,00</td>
+          </tr>
+          <tr>
+            <td class="border-end">Monto disponible para operaciones en 48hs en Dólar Estadounidense </td>
+            <td>US$0,00</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <br />
-    <h4>Monto disponible para Argentina</h4>
-    <table>
-      <tbody>
-        <tr>
-          <td>Monto disponible para operaciones en contado inmediato en Peso Argentino</td>
-          <td>AR$ 0,00</td>
-        </tr>
-        <tr>
-          <td>Monto disponible para operaciones en 24hs en Peso Argentino </td>
-          <td>AR$0,00</td>
-        </tr>
-        <tr>
-          <td>Monto disponible para operaciones en 48hs en Peso Argentino </td>
-          <td>AR$0,00</td>
-        </tr>
-        <tr>
-          <td>Monto disponible para operaciones en contado inmediato en Dólar Estadounidense </td>
-          <td>US$0,00</td>
-        </tr>
-        <tr>
-          <td>Monto disponible para operaciones en 24hs en Dólar Estadounidense </td>
-          <td>US$0,00</td>
-        </tr>
-        <tr>
-          <td>Monto disponible para operaciones en 48hs en Dólar Estadounidense </td>
-          <td>US$0,00</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 
-
-  <footer class="container-fluid" id="Footer">
+  <footer class="container-fluid">
     <div class="d-flex justify-content-between flex-wrap my-4 py-3 border-top" id="footerDiv">
-        <ul class="nav justify-content-start gap-3 col-md-4 pe-2 pt-2 mt-3 mt-lg-0">
-            <li class="nav-item">
-                © 2023 Arg-Broker. Inc</li>
-        </ul>
+        <span class="col-md-4 text-muted pt-2">© 2023 Arg-Broker. Inc</span>
         <a href="#" class="col-md-4 text-center"><i class="fa-brands fa-bootstrap fs-1 text-dark"></i></a>
         <ul class="nav justify-content-end gap-3 col-md-4 pe-2 pt-2 mt-3 mt-lg-0">
             <li class="nav-item">
@@ -162,10 +214,42 @@
             </li>
         </ul>
     </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 
+<!-- fin formulario de compra -->
+
+  <script>
+    //cantidad form
+    /* desabilitadores de los inputs*/
+    var cantidadLabel = document.getElementById('cantidadLabel')
+    var montoLabel = document.getElementById('montoLabel')
+
+    cantidadLabel.addEventListener('click', function (e) {
+      document.getElementById('montoInput').disabled = true
+      document.getElementById('cantidadInput').disabled = false
+    })
+
+    montoLabel.addEventListener('click', function (e) {
+      document.getElementById('montoInput').disabled = false
+      document.getElementById('cantidadInput').disabled = true
+    })
+    //modalidad form
+    var modalidadInput = document.getElementById('modalidadInput')
+    var modalidadLabel = document.getElementById('flexRadioDefault2')
+    var mercadoLabel = document.getElementById('flexRadioDefault1');
+
+
+    console.log(modalidadLabel.checked)
+    modalidadLabel.addEventListener('click', function (e) {
+      modalidadInput.disabled = false
+    })
+
+    mercadoLabel.addEventListener('click', function (e) {
+      modalidadInput.disabled = true
+    })
+  </script>
 </body>
 
 </html>

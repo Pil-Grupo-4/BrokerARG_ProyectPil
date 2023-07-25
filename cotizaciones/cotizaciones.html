@@ -6,7 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <title>Cotización de Acciones</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cotizaciones.css">
 </head>
 <body>
 
@@ -19,207 +19,221 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-
-                <a class="nav-link" id="ingresarNav" href="#">Ingresar</a>
-                <a class="nav-link" id="registrarseNav" href="Registrarse.html">Registrarse</a>
+              <a class="nav-link" id="ingresarNav" href="/Landing/landingPage.html">Home</a>
+              <a class="nav-link" id="dashboarNav" href="/dashboard/dashboard.html">DashBoard</a>
+              <a class="nav-link" id="ingresarNav" href="#">Cotizaciones</a>
+              <a class="nav-link" id="operacionesNav" href="../operaciones/operaciones.html">Operaciones</a>
+              <a class="nav-link" id="logoutNav" href="../formularios/login/login.html">Log out</a>
             </div>
         </div>
     </div>
-  </nav>
+</nav>
 
 
-  <section class="quote-container">
-    <h2 class="quote-title">Cotización de Acciones Argentinas</h2>
+<section class="quote-container">
+  <h2 class="quote-title">Cotización de Acciones Argentinas</h2>
 
-    <div class="nav-table">
-        <a class="nav-table-active" href="#">Acciones</a>
-        <a href="#">Cedears</a>
-        <a href="#">Opciones</a>
-        <a href="#">Bonos</a>
-        <a href="#">Letras</a>
-        <a href="#">Obligaciones Negociables</a>
-        <a href="#">Fondos</a>
-        <a href="#">Cauciones</a>
-        <a href="#">Cheques</a>
-        <a href="#">Monedas</a>
-    </div>
+  <div class="nav-table">
+      <a class="nav-table-active" href="#">Acciones</a>
+      <a href="#">Cedears</a>
+      <a href="#">Opciones</a>
+      <a href="#">Bonos</a>
+      <a href="#">Letras</a>
+      <a href="#">Obligaciones Negociables</a>
+      <a href="#">Fondos</a>
+      <a href="#">Cauciones</a>
+      <a href="#">Cheques</a>
+      <a href="#">Monedas</a>
+  </div>
 
-    <table class="table-custom" no-bootstrap>
-      <tr class="table-header">
-        <th>Símbolo</th>
-        <th>Último Operado</th>
-        <th>Variación Diaria</th>
-        <th>Cantidad Compra</th>
-        <th>Precio Compra</th>
-        <th>Precio Venta</th>
-        <th>Cantidad Venta</th>
-        <th>Apertura</th>
-        <th>Mínimo</th>
-        <th>Máximo</th>
-        <th>Último Cierre</th>
-        <th>Monto Operado</th>
-      </tr>
+  <table class="table-custom" no-bootstrap>
+    <tr class="table-header">
+      <th>Símbolo</th>
+      <th>Último Operado</th>
+      <th>Variación Diaria</th>
+      <th>Cantidad Compra</th>
+      <th>Precio Compra</th>
+      <th>Precio Venta</th>
+      <th>Cantidad Venta</th>
+      <th>Apertura</th>
+      <th>Mínimo</th>
+      <th>Máximo</th>
+      <th>Último Cierre</th>
+      <th>Monto Operado</th>
+      <th></th>
+    </tr>
 
-      <!-- DATOS DE LA TABLA A MODO DE EJEMPLO -->
+    <!-- DATOS DE LA TABLA A MODO DE EJEMPLO -->
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
 
-      <tr class="table-data">
-        <td>ABC</td>
-        <td>100.00</td>
-        <td>+2.5%</td>
-        <td>500</td>
-        <td>95.50</td>
-        <td>105.20</td>
-        <td>300</td>
-        <td>98.00</td>
-        <td>97.80</td>
-        <td>100.50</td>
-        <td>99.00</td>
-        <td>$50,000</td>
-      </tr>
-    </table>
+    <tr class="table-data">
+      <td>ABC</td>
+      <td>100.00</td>
+      <td>+2.5%</td>
+      <td>500</td>
+      <td>95.50</td>
+      <td>105.20</td>
+      <td>300</td>
+      <td>98.00</td>
+      <td>97.80</td>
+      <td>100.50</td>
+      <td>99.00</td>
+      <td>$50,000</td>
+      <td><a href="../operaciones/operaciones.html">Comprar</a></td>
+    </tr>
+    
+  </table>
 
-    <div class="pagination">
-        <button class="pagination-btn">Anterior</button>
-        <span class="pagination-numbers">Página 1 de 5</span>
-        <button class="pagination-btn">Siguiente</button>
-    </div>
+  <div class="pagination">
+      <button class="pagination-btn">Anterior</button>
+      <span class="pagination-numbers">Página 1 de 5</span>
+      <button class="pagination-btn">Siguiente</button>
+  </div>
 
-  </section>
+</section>
 
   <footer class="container-fluid">
     <div class="d-flex justify-content-between flex-wrap my-4 py-3 border-top" id="footerDiv">

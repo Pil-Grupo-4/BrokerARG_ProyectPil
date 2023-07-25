@@ -42,17 +42,28 @@
         padding-right: 250px;
     }
 }
+
+#Footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;  
+    background-color: #40404039; 
+}
+
 #footerDiv{
     padding-left: 250;
     padding-right:250;
+
     align-items: center;
+
     
 }
 
 @media (min-width: 992px) {
     #footerDiv {
-        padding-left: 250px;
-        padding-right: 250px;
+        padding-left: 450px;
+        padding-right: 450px;
+        padding-top: 30px!important;
+        margin-top: 0!important;
     }
 }
-

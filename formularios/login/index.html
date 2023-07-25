@@ -30,7 +30,7 @@
     <main>
         <div class="container">
             <h2 class="mb-4">Iniciar Sesión</h2>
-            <form>
+            <form id="form-login">
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" class="form-control" id="email" name="email" placeholder="correo@correo.com" required>
@@ -46,5 +46,20 @@
         </div>
     </main>
 
+    <script>
+        const formLogin = document.getElementById("form-login");
+        formLogin.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let isEmpty = false;
+            for(let i=0; i<e.target.length-1; i++){
+                if(e.target[i].value == ""){
+                    isEmpty = true;
+                }
+            }
+            if(!isEmpty){
+                location.pathname = "/dashboard/dashboard.html"
+            }
+        })
+    </script>
 </body>
-</html>l
+</html>

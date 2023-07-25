@@ -1,0 +1,98 @@
+body {
+    height: 100vh;
+    background-color:#95959539;
+}
+#navBarGral {
+    background-color: #5077FE !important;
+}
+
+#navBarContainer {
+    padding-left: 200;
+    padding-right: 200;
+
+}
+
+.navbar-nav {
+    margin-left: auto;
+    padding-left: 100px;
+}
+
+.navbar-brand {
+    color: aliceblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.nav-link {
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-right: 10px
+}
+
+.nav-link[href="#"] {
+    /* Solo se aplica al que tenga el # en el href */
+    border-radius: 50px;
+    background-color: #3447F4;
+    padding: 10px 20px;
+}
+
+/* Media query para pantallas grandes (min-width: 992px) */
+@media (min-width: 992px) {
+    #navBarContainer {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+}
+
+.seleccionada {
+    border-radius: 50px;
+    background-color:#3447F4;
+    padding: 10px 20px;
+}
+
+main {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#containerForm {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #033344;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    -webkit-box-shadow: 0px 10px 8px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 8px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 8px 1px rgba(0,0,0,0.75);
+}
+form div.form-group {
+    margin-top: 20px;
+}
+#Footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;  
+    background-color: #40404039; 
+}
+
+#footerDiv{
+    padding-left: 250;
+    padding-right:250;
+
+    align-items: center;
+
+    
+}
+
+@media (min-width: 992px) {
+    #footerDiv {
+        padding-left: 450px;
+        padding-right: 450px;
+        padding-top: 30px!important;
+        margin-top: 0!important;
+    }
+}

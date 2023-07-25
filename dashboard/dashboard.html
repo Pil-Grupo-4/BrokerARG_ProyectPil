@@ -31,35 +31,32 @@
         </div>
     </nav>
 
+    <!--END NAVBAR-->
 
-
-
-    <div class="container mt-4 mb-4">
-        <h2>Mi Portafolio</h2>
-    </div>
-    <div class="container info_portfolio_container">
+    <div class="container mt-5 main_container">
+        
+        <h2 class="mb-3">Mi Portafolio</h2>
+    
         <div class="row justify-content-around portfolio_row">
-            <div class="col-md-3 mx-2 portfolio_div">
+            <div class="col-md-12 col-lg-2 mx-2 mt-4 portfolio_div">
                 <h3>Fondos Totales</h2>
-                    <!--<h4>Suma de fondos Disponibles y todas las acciones que posee</h3>-->
-                    <h4>10,750</h4>
+                <!--<h4>Suma de fondos Disponibles y todas las acciones que posee</h3>-->
+                <h4>$10,750</h4>
             </div>
-            <div class="col-md-3 mx-2 portfolio_div">
-                <h3>Fondos Disponibles</h2>
-                    <!--<h4>Fondos disponibles para comprar acciones</h3>-->
-                    <h4>$2,000</h4>
+            <div class="col-md-12 col-lg-2 mx-2 mt-4 portfolio_div">
+                <h3>Fondos</h2>
+                <!--<h4>Fondos disponibles para comprar acciones</h3>-->
+                <h4>$2,000</h4>
             </div>
-            <div class="col-md-3 mx-2 portfolio_div">
-                <h3>Ganancias desde ayer</h2>
-                    <!--<h4>compara fondos totales desde ayer con los de ahora</h3>-->
-                    <!--Si es positivo mostrar en verde/ sino en rojo-->
-                    <h4 style="color: green;">$100</h4>
+            <div class="col-md-12 col-lg-2 mx-2 mt-4 portfolio_div">
+                <h3>Ganancia Diaria</h2>
+                <!--<h4>compara fondos totales desde ayer con los de ahora</h3>-->
+                <!--Si es positivo mostrar en verde/ sino en rojo-->
+                <h4 style="color: green;">$100</h4>
             </div>
         </div>
-    </div>
 
-    <div class="container mt-4">
-        <table class="table table-bordered">
+        <table class="table table-bordered table-striped mt-4 portfolio_table">
             <thead>
                 <tr>
                     <th>Simbolo</th>
@@ -69,7 +66,7 @@
                     <th>Total</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table_row">
                 <tr>
                     <td>ABC</td>
                     <td>Company ABC</td>
@@ -84,16 +81,43 @@
                     <td>$75.00</td>
                     <td>$3,750.00</td>
                 </tr>
+                <tr>
+                    <td>XYZ</td>
+                    <td>Company XYZ</td>
+                    <td>50</td>
+                    <td>$75.00</td>
+                    <td>$3,750.00</td>
+                </tr>
+                <tr>
+                    <td>XYZ</td>
+                    <td>Company XYZ</td>
+                    <td>50</td>
+                    <td>$75.00</td>
+                    <td>$3,750.00</td>
+                </tr>
+                <tr>
+                    <td>XYZ</td>
+                    <td>Company XYZ</td>
+                    <td>50</td>
+                    <td>$75.00</td>
+                    <td>$3,750.00</td>
+                </tr>
+                <tr>
+                    <td>XYZ</td>
+                    <td>Company XYZ</td>
+                    <td>50</td>
+                    <td>$75.00</td>
+                    <td>$3,750.00</td>
+                </tr>
                 <!-- Add more rows for additional entries -->
             </tbody>
         </table>
     </div>
-    <footer class="container-fluid" id="Footer">
+
+
+    <footer class="container-fluid">
         <div class="d-flex justify-content-between flex-wrap my-4 py-3 border-top" id="footerDiv">
-            <ul class="nav justify-content-start gap-3 col-md-4 pe-2 pt-2 mt-3 mt-lg-0">
-                <li class="nav-item">
-                    © 2023 Arg-Broker. Inc</li>
-            </ul>
+            <span class="col-md-4 text-muted pt-2">© 2023 Arg-Broker. Inc</span>
             <a href="#" class="col-md-4 text-center"><i class="fa-brands fa-bootstrap fs-1 text-dark"></i></a>
             <ul class="nav justify-content-end gap-3 col-md-4 pe-2 pt-2 mt-3 mt-lg-0">
                 <li class="nav-item">
@@ -105,19 +129,7 @@
             </ul>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>
-
 </html>

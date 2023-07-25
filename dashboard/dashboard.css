@@ -54,6 +54,28 @@
 }
 /*CSS PARA EL NAV*/
 
+body {
+    background-color: #f0f0f0;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_container {
+    max-width: 80%;
+    margin: 60px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px; 
+}
+
 .info_portfolio_container {
     display: flex;
     justify-content: center;
@@ -73,6 +95,7 @@
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
     padding: 10px;
+    text-align: center;
 }
 
 .portfolio_div h3 {
@@ -83,6 +106,10 @@
     color: #1F7A8C;
 }
 
+.portfolio_table th {
+    background-color: #3447F4; 
+    color: white; 
+}
 
 
 

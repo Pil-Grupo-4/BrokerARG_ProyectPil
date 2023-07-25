@@ -1,4 +1,4 @@
-#navBarGral {
+/* #navBarGral {
     background-color: #5077FE !important;
 }
 
@@ -34,4 +34,8 @@
     border-radius: 50px;
     background-color:#3447F4;
     padding: 10px 20px;
+} */
+
+footer{
+    background-color: #022B3A;
 }

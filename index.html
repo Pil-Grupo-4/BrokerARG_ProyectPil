@@ -2,35 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <title>Login</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Home</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./navbar/navbar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navBarGral">
-        <div class="container-fluid" id="navBarContainer">
-            <a class="navbar-brand" href="./index.html">ArgenBroker</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container">
+      <img src="./navbar/media/logo.png" width="250px" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                        <a class="ingresar" id="ingresarNav" href="./formularios/login/index.html">Ingresar</a>
-                        <a class="registrarse" id="registrarseNav" href="./formularios/register/index.html">Registrarse</a>
-                </div>
-            </div>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo01">
+        <ul class="navbar-nav me-1 mb-2 mb-lg-0 navbar__list">
+          <li class="nav-item">
+            <a class="nav-link text-white" aria-current="page" href="./cotizaciones/index.html">Cotizaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./dashboard/dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="./quienes somos/index.html">Quienes somos</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo01">
+        <div class="botones__header">
+          <a href="../formularios/login/index.html"><button class="button">Iniciar Sesion</button></a>
+          <a href="../formularios/register/index.html"><button class="button">Registrarse</button></a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
+  <div class="main-banner w-100 justify-content-center align-items-center d-flex" id="top">
+    <div class="d-flex flex-row ">
+      <div class="d-flex  justify-content-center flex-column w-60 p-5">
+        <div class="caption header-text">
+          <h6>Bienvenidos</h6>
+          <h4> Ingresa <em>Al mundo</em> del <em>Dinero digital.</em></h4>
+          <p>Conseguí la seguridad y la información necesaria para tomar tu próximo paso. Aprendé con nuestros expertos
+            sobre la gestión de tus finanzas y el mercado.</p>
+        </div>
+        <div class="botones__header">
+          <a href="../formularios/login/index.html"><button class="button">Iniciar Sesion</button></a>
+          <a href="../formularios/register/index.html"><button class="button">Registrarse</button></a>
+        </div>
+      </div>
+      <div class="w-40"><img class="w-100" src="./images/cajero.png" /></div>
+    </div>
+  </div>
+  <div class="services section d-flex flex-row justify-content-center align-items-center" id="services">
+    <div class="w-50 ">
+      <div class="container-fluid  text-center">
+        <div class="row">
+          <div class="col">
+            <div class="icon">
+              <img src="../images/services-01.jpg" alt="discover SEO" class="templatemo-feature">
+            </div>
+            <h4>Tu dinero siempre en movimiento</h4>
+          </div>
+          <div class="col">
+            <div class="icon">
+              <img src="../images/services-02.jpg" alt="data analysis" class="templatemo-feature">
+            </div>
+            <h4>Analiza tus ganancias todos los dias.</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="icon">
+              <img src="../images/services-03.jpg" alt="precise data" class="templatemo-feature">
+            </div>
+            <h4>Precisión y análisis de datos &amp; precisos.</h4>
+          </div>
+          <div class="col">
+            <div class="icon">
+              <img src="../images/services-04.jpg" alt="SEO marketing" class="templatemo-feature">
+            </div>
+            <h4>SEO Marketing &amp; Social Media</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-50 pr-4">
+      <div class="col-lg-12">
+        <div class="section-heading text-end p-5">
+          <h2>Es hora de <em>ArgenBroker,</em>
+            <br>
+            <span>Invierte </span>en moneda digital
+          </h2>
+          <div class="line-dec"></div>
+          <p>Queremos brindarte toda la información necesaria para que des tus próximos pasos y te conviertas en un
+            gran trader. Accedé a todos estos recursos desde tu cuenta de ArgenBroker.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Landing -->
+    <div class="row d-flex justify-content-center align-items-center w-100">
 
+      <div class="col-lg-6 w-50 p-5">
+        <div class="section-heading">
+          <h2>La <em>Apertura</em> &amp; y el mantenimiento es <span>Gratis</span></h2>
+          <div class="line-dec"></div>
+          <p>Analizá el contexto de cada instrumento y armá una estrategia de inversión que se ajuste a tus
+            necesidades.</p>
+        </div>
+        <div class="skills">
+          <div class="skill-slide marketing">
+            <div class="fill"></div>
+            <h6>Ganancias</h6>
+            <span>90%</span>
+          </div>
+          <p class="more-info">Consultá los informes realizados por los expertos. Todo lo que necesitás para
+            saber en qué invertir.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 w-30">
+        <img class="w-100" src="./images/money.png" />
+      </div>
+    </div>
 </body>
+<footer class="text-white">
+  <ul class="nav justify-content-center border-bottom py-4  mb-3 text-white">
+    <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
+    <li class="nav-item"><a href="./quienes somos/index.html" class="nav-link px-2 text-white">Quienes somos</a></li>
+    <li class="nav-item"><a href="./dashboard/dashboard.html" class="nav-link px-2 text-white">Dashboard</a></li>
+    <li class="nav-item"><a href="./cotizaciones/index.html" class="nav-link px-2 text-white">Cotizaciones</a></li>
+  </ul>
+  <p class="text-center text-white pb-4 mb-0">© 2023 ArgenBroker, Inc</p>
+</footer>
 
 </html>
